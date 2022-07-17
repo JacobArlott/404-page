@@ -447,6 +447,105 @@ html, body, .wrapper {
   transform: perspective(150px) rotateX(-20deg);
 }
 
+.glow__ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 10px;
+  height: 10px;
+  
+  border-radius: 10px;
+  background-color: #83fff2;
+  
+  transform: translateY(160px);
+}
+.glow__ball_1 {  
+  animation: 5s fadeUp infinite;
+  animation-delay: .5s;
+}
+.glow__ball_2 {
+  left: 10px;
+  
+  width: 5px;
+  height: 5px;
+  
+  animation: 4s fadeUp infinite;
+  animation-delay: .8s;
+}
+.glow__ball_3 {
+  left: 24px;
+  
+  width: 15px;
+  height: 15px;
+  
+  animation: 9s fadeUp infinite;
+  animation-delay: .65s;
+}
+.glow__ball_4 {
+  left: 34px;
+  
+  width: 8px;
+  height: 8px;
+  
+  animation: 7s fadeUp infinite;
+  animation-delay: .5s;
+}
+.glow__ball_5 {
+  left: 57px;
+  
+  width: 14px;
+  height: 14px;
+  
+  animation: 7s fadeUp infinite;
+  animation-delay: .9s;
+}
+.glow__ball_6 {
+  left: 78px;
+  
+  width: 11px;
+  height: 11px;
+  
+  animation: 3s fadeUp infinite;
+  animation-delay: .3s;
+}
+.glow__ball_7 {
+  left: 91px;
+  
+  width: 13px;
+  height: 13px;
+  
+  animation: 8s fadeUp infinite;
+  animation-delay: .77s;
+}
+.glow__ball_8 {
+  left: 105px;
+  
+  width: 7px;
+  height: 7px;
+  
+  animation: 6s fadeUp infinite;
+  animation-delay: .4s;
+}
+.glow__ball_9 {
+  left: 113px;
+  
+  width: 8px;
+  height: 8px;
+  
+  animation: 4s fadeUp infinite;
+  animation-delay: .6s;
+}
+.glow__ball_10 {
+  left: 120px;
+  
+  width: 4px;
+  height: 4px;
+  
+  animation: 9s fadeUp infinite;
+  animation-delay: .92s;
+}
+
 .numbers {
   position: absolute;
   top: 0;
@@ -457,6 +556,20 @@ html, body, .wrapper {
   font-size: 200px;
   
   display: flex;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(160px);
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
