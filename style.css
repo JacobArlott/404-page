@@ -577,7 +577,7 @@ html, body, .wrapper {
 @keyframes fadeUp {
   0% {
     transform: translateY(160px);
-    opacity: 1;
+    opacity: 0.5;
   }
   60% {
     opacity: 1;
